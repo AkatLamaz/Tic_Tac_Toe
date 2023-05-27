@@ -11,9 +11,9 @@ A simple command-line implementation of the classic Tic Tac Toe game in Python.
 ```bash
    python tic_tac_toe.py
 ```
-5.The game will ask for player names. Enter the names for both players.
-6.Each player will take turns entering their moves.
-7.Enter the number corresponding to the position you want to mark. The board is numbered as follows:
+5. The game will ask for player names. Enter the names for both players. <br />
+6. Each player will take turns entering their moves. <br />
+7. Enter the number corresponding to the position you want to mark. The board is numbered as follows: <br />
 ```shell
 1 | 2 | 3
 - | - | -
@@ -21,9 +21,9 @@ A simple command-line implementation of the classic Tic Tac Toe game in Python.
 - | - | -
 7 | 8 | 9
 ```
-8.The game will display the updated board after each move and check for a winner.
-9.If a player wins or the game ends in a tie, the result will be displayed.
-10.The game will prompt you to play again. Enter 'y' to play again or 'n' to exit.
+8. The game will display the updated board after each move and check for a winner. <br />
+9. If a player wins or the game ends in a tie, the result will be displayed. <br />
+10. The game will prompt you to play again. Enter 'y' to play again or 'n' to exit. <br />
 
 
 ## Features
