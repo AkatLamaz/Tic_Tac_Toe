@@ -11,11 +11,11 @@ skeleton = [
 ]
 
 skeleton_show = [
-    ['1', '|', '2', '|', '3'],
+    ['7', '|', '8', '|', '9'],
     ['-', '|', '-', '|', '-'],
     ['4', '|', '5', '|', '6'],
     ['-', '|', '-', '|', '-'],
-    ['7', '|', '8', '|', '9']
+    ['1', '|', '2', '|', '3']
 ]
 
 def clear_screen():
@@ -50,6 +50,7 @@ def get_player_move(player_symbol):
                     row += 1
                 elif row == 2:
                     row += 2
+                row = 4 - row
                 if skeleton[row][col] == ' ':
                     skeleton[row][col] = player_symbol
                     break
