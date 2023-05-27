@@ -15,11 +15,11 @@ A simple command-line implementation of the classic Tic Tac Toe game in Python.
 6. Each player will take turns entering their moves. <br />
 7. Enter the number corresponding to the position you want to mark. The board is numbered as follows: <br />
 ```shell
-1 | 2 | 3
+7 | 8 | 9
 - | - | -
 4 | 5 | 6
 - | - | -
-7 | 8 | 9
+1 | 2 | 3
 ```
 8. The game will display the updated board after each move and check for a winner. <br />
 9. If a player wins or the game ends in a tie, the result will be displayed. <br />
