@@ -1,5 +1,8 @@
 import os
 
+Player1 = "Player1"
+Player2 = "Player2"
+
 button = 0
 
 skeleton = [
@@ -25,14 +28,19 @@ def print_welcome_message():
     print("Welcome to Tic Tac Toe game!\n")
 
 def start_game():
-    button = int(input("Press '1' to start the game: "))
+    global Player1
+    global Player2
+    button = int(input("Press '1' to start the game \nPress '2' to edit player names:\n "))
     if button == 1:
         clear_screen()
+    elif button == 2:
+        Player1 = input("Enter player 1 name: ")
+        Player2 = input("Enter player 2 name: ")
     else:
         print("Please press '1' to start the game.")
 
 def print_player_symbols(player1_symbol, player2_symbol):
-    print("Player 1", player1_symbol, "vs", player2_symbol, "Player 2 \n")
+    print(Player1, player1_symbol, "vs", player2_symbol, Player2, "\n")
 
 def get_player_move(player_symbol):
     print("Player", player_symbol)
@@ -44,7 +52,7 @@ def get_player_move(player_symbol):
                 print("Exiting game...")
                 exit()
             elif 1 <= button <= 9:
-                row = ((button * 2) - 1) // 6 # Indeks wierszas
+                row = ((button * 2) - 1) // 6 # Indeks wiersza
                 col = ((button * 2) - 1) % 6 # Indeks kolumny
                 if row == 1:
                     row += 1
@@ -72,9 +80,9 @@ def play_game(player1_symbol, player2_symbol):
         gui()
         if check_winner():
             if i % 2 == 0:
-                print("Player 1 Wins!")
+                print(Player1 + " Wins!")
             else:
-                print("Player 2 Wins!")
+                print(Player2 + " Wins!")
             break
         i += 1
     else:
