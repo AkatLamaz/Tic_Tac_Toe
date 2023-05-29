@@ -44,7 +44,7 @@ def get_player_move(player_symbol):
                 print("Exiting game...")
                 exit()
             elif 1 <= button <= 9:
-                row = ((button * 2) - 1) // 6 # Indeks wiersza
+                row = ((button * 2) - 1) // 6 # Indeks wierszas
                 col = ((button * 2) - 1) % 6 # Indeks kolumny
                 if row == 1:
                     row += 1
